@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+
+#head1{
+color: limegreen;
+text-align: center;
+padding-top: 30px;
+}
+#but{
+	padding-left: 750px;
+}
+
+	
+</style>
+
+</head>
+<body>
+	
+<div id="middle" className='container-lg'>
+    <form action="/image/actions" method="post" enctype="multipart/form-data">
+        <div id="inner1" className='container-fluid form-group'>
+            <h1 className='text-warning' id="head1">Login Page</h1>
+            <br></br>
+            <div class="col-sm-4 container-fluid">
+        <label for="depthimg">Depth Image:</label>
+        <input type="file" id="depthimg" name="depthimg" accept="image/*"><br><br>
+            </div>
+            <br></br>
+
+
+            <div class="col-sm-4 container-fluid">
+        <label for="intensity">Intensity Image:</label>
+        <input type="file" id="intensity" name="intensity" accept="image/*"><br><br>
+            </div>
+            <br></br>
+
+        
+    <br></br>
+            <div id="but"class="col-sm-1">
+                <input  type="submit" class="btn btn-info" />
+            </div>
+
+        </div>
+
+
+    </form>
+    </div>	
+	
+
+
+</body>
+</html>
